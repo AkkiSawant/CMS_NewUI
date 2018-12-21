@@ -1,0 +1,490 @@
+
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title">Create Customer</h5>
+        </div>
+        <div class="card-body">
+          <form form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+            
+            
+            <!-- <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                 <label for="name">Name:</label>
+                <input  placeholder="Name" name="name" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label for="mid_name">Mid Name:</label>
+                  <input  placeholder="Mid name" name="mid_name" class="form-control" id="mid_name">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label for="surname">Surname:</label>
+                  <input  placeholder="Last name" name="surname" class="form-control" id="surname">
+                </div>
+              </div>
+            </div>
+             <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                 <label for="name">Name:</label>
+                <input  placeholder="Name" name="name" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label for="mid_name">Mid Name:</label>
+                  <input  placeholder="Mid name" name="mid_name" class="form-control" id="mid_name">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label for="surname">Surname:</label>
+                  <input  placeholder="Last name" name="surname" class="form-control" id="surname">
+                </div>
+              </div>
+            </div>
+             <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                 <label for="name">Name:</label>
+                <input  placeholder="Name" name="name" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label for="mid_name">Mid Name:</label>
+                  <input  placeholder="Mid name" name="mid_name" class="form-control" id="mid_name">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label for="surname">Surname:</label>
+                  <input  placeholder="Last name" name="surname" class="form-control" id="surname">
+                </div>
+              </div>
+            </div>
+             <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                 <label for="name">Name:</label>
+                <input  placeholder="Name" name="name" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label for="mid_name">Mid Name:</label>
+                  <input  placeholder="Mid name" name="mid_name" class="form-control" id="mid_name">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label for="surname">Surname:</label>
+                  <input  placeholder="Last name" name="surname" class="form-control" id="surname">
+                </div>
+              </div>
+            </div>
+             <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                 <label for="name">Name:</label>
+                <input  placeholder="Name" name="name" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label for="mid_name">Mid Name:</label>
+                  <input  placeholder="Mid name" name="mid_name" class="form-control" id="mid_name">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label for="surname">Surname:</label>
+                  <input  placeholder="Last name" name="surname" class="form-control" id="surname">
+                </div>
+              </div>
+            </div> <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                 <label for="name">Name:</label>
+                <input  placeholder="Name" name="name" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label for="mid_name">Mid Name:</label>
+                  <input  placeholder="Mid name" name="mid_name" class="form-control" id="mid_name">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label for="surname">Surname:</label>
+                  <input  placeholder="Last name" name="surname" class="form-control" id="surname">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                 <label for="name">Name:</label>
+                <input formControlName="name" placeholder="Name" name="name" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label for="mid_name">Mid Name:</label>
+                  <input formControlName="mid_name" placeholder="Mid name" name="mid_name" class="form-control" id="mid_name">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label for="surname">Surname:</label>
+                  <input formControlName="surname" placeholder="Last name" name="surname" class="form-control" id="surname">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                 <label for="name">Name:</label>
+                <input formControlName="name" placeholder="Name" name="name" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label for="mid_name">Mid Name:</label>
+                  <input formControlName="mid_name" placeholder="Mid name" name="mid_name" class="form-control" id="mid_name">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label for="surname">Surname:</label>
+                  <input formControlName="surname" placeholder="Last name" name="surname" class="form-control" id="surname">
+                </div>
+              </div>
+            </div> -->
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Personal Details 
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+
+                    <div class="row">
+                      <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                         <label for="name">Name:</label>
+                        <input  placeholder="Name" name="name" class="form-control" id="name">
+                        </div>
+                      </div>
+                      <div class="col-md-4 px-1">
+                        <div class="form-group">
+                          <label for="mid_name">Mid Name:</label>
+                          <input  placeholder="Mid name" name="mid_name" class="form-control" id="mid_name">
+                        </div>
+                      </div>
+                      <div class="col-md-4 pl-1">
+                        <div class="form-group">
+                          <label for="surname">Surname:</label>
+                          <input  placeholder="Last name" name="surname" class="form-control" id="surname">
+                        </div>
+                      </div>
+                  </div>
+
+                   <div class="row">
+                      <div class="col-md-6 pr-1">
+                        <div class="form-group">
+                         <label for="name">Father Name:</label>
+                        <input  placeholder="Father Name" name="fatherName" class="form-control" id="name">
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-6 pl-1">
+                        <div class="form-group">
+                          <label for="surname">Mother's Name:</label>
+                          <input  placeholder="Mother's name" name="motherName" class="form-control" id="surname">
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-6 pr-1">
+                        <div class="form-group">
+                         <label for="name">Gender:</label>
+                         <div class="form-check form-check-radio">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="male" checked>
+                                <span class="form-check-sign"></span>
+                                Male
+                            </label>
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="female" checked>
+                                <span class="form-check-sign"></span>
+                                Female
+                            </label>
+                        </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Passport Details
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                         <label for="name">Nationality:</label>
+                        <input formControlName="name" placeholder="Nationality" name="nationality" class="form-control" id="nationality">
+                        </div>
+                      </div>
+                      <div class="col-md-4 px-1">
+                        <div class="form-group">
+                          <label for="mid_name">Issued By:</label>
+                          <input formControlName="mid_name" placeholder="Issued By" name="issuedBy" class="form-control" id="issuedBy">
+                        </div>
+                      </div>
+                      <div class="col-md-4 pl-1">
+                        <div class="form-group">
+                          <label for="surname">Passport No:</label>
+                          <input formControlName="surname" placeholder="Passport No" name="passportNo" class="form-control" id="passportNo">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                         <label for="name">Passport Issued By:</label>
+                        <input formControlName="name" placeholder="Passport Issued By" name="passportIssuedBy" class="form-control" id="passportIssuedBy">
+                        </div>
+                      </div>
+                      <div class="col-md-4 px-1">
+                        <div class="form-group">
+                          <label for="mid_name">Date Of Issue:</label>
+                          <input formControlName="mid_name" placeholder="Date Of Issue" name="dateOfIssue" class="form-control" id="dateOfIssue">
+                        </div>
+                      </div>
+                      <div class="col-md-4 pl-1">
+                        <div class="form-group">
+                          <label for="surname">Date Of Expiry:</label>
+                          <input formControlName="surname" placeholder="Date Of Issue" name="dateOfExpiry" class="form-control" id="dateOfExpiry">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                         <label for="name">Control Period:</label>
+                        <input formControlName="name" placeholder="Control Period" name="controlPeriod" class="form-control" id="controlPeriod">
+                        </div>
+                      </div>
+                      <div class="col-md-4 px-1">
+                        <div class="form-group">
+                          <label for="mid_name">Emergency Contact Name:</label>
+                          <input formControlName="mid_name" placeholder="Emergency Contact Name" name="emergencyContactName" class="form-control" id="emergencyContactName">
+                        </div>
+                      </div>
+                      <div class="col-md-4 pl-1">
+                        <div class="form-group">
+                          <label for="surname">Resident Country Code:</label>
+                          <input formControlName="surname" placeholder="Resident Country Code" name="resCountryCode" class="form-control" id="resCountryCode">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 pr-1">
+                        <div class="form-group">
+                         <label for="name">Birth Country:</label>
+                        <input formControlName="name" placeholder="Birth Country" name="birthCountry" class="form-control" id="birthCountry">
+                        </div>
+                      </div>
+                      <div class="col-md-4 px-1">
+                        <div class="form-group">
+                          <label for="mid_name">Birth City:</label>
+                          <input formControlName="mid_name" placeholder="Birth City" name="birthCity" class="form-control" id="birthCity">
+                        </div>
+                      </div>
+                      <div class="col-md-4 pl-1">
+                        <div class="form-group">
+                          <label for="surname">Birth Place:</label>
+                          <input formControlName="surname" placeholder="Birth Place" name="birthPlace" class="form-control" id="birthPlace">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Contact Details
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                   <div class="row">
+                    <div class="col-md-4 pr-1">
+                      <div class="form-group">
+                       <label for="name">Email:</label>
+                      <input formControlName="name" placeholder="Email" name="email" class="form-control" id="email">
+                      </div>
+                    </div>
+                    <div class="col-md-4 px-1">
+                      <div class="form-group">
+                        <label for="mid_name">Common Languages:</label>
+                        <input formControlName="mid_name" placeholder="Common Languages" name="commonLang" class="form-control" id="commonLang">
+                      </div>
+                    </div>
+                    <div class="col-md-4 pl-1">
+                      <div class="form-group">
+                        <label for="surname">Send Email:</label>
+                        <div class="form-check form-check-radio">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="sendEmail" id="sendEmail" value="Yes" checked>
+                                <span class="form-check-sign"></span>
+                                Yes
+                            </label>
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="radio" name="sendEmail" id="sendEmail" value="No" checked>
+                                <span class="form-check-sign"></span>
+                                No
+                            </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                 <label for="name">Mobile No:</label>
+                <input formControlName="name" placeholder="Mobile No" name="mobileNo" class="form-control" id="mobileNo">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label for="mid_name">Home:</label>
+                  <input formControlName="mid_name" placeholder="Mid name" name="home" class="form-control" id="home">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label for="surname">Work:</label>
+                  <input formControlName="surname" placeholder="Work" name="work" class="form-control" id="work">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 pr-1">
+                <div class="form-group">
+                 <label for="name">Name:</label>
+                <input formControlName="name" placeholder="Name" name="name" class="form-control" id="name">
+                </div>
+              </div>
+              <div class="col-md-4 px-1">
+                <div class="form-group">
+                  <label for="mid_name">Mid Name:</label>
+                  <input formControlName="mid_name" placeholder="Mid name" name="mid_name" class="form-control" id="mid_name">
+                </div>
+              </div>
+              <div class="col-md-4 pl-1">
+                <div class="form-group">
+                  <label for="surname">Surname:</label>
+                  <input formControlName="surname" placeholder="Last name" name="surname" class="form-control" id="surname">
+                </div>
+              </div>
+            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+ 
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <button class="btn btn-success">Submit</button>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>About Me</label>
+                  <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                </div>
+              </div>
+            </div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-md-4">
+      <div class="card card-user">
+        <div class="image">
+          <img src="../assets/img/bg5.jpg" alt="...">
+        </div>
+        <div class="card-body">
+          <div class="author">
+            <a href="#">
+              <img class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+              <h5 class="title">Mike Andrew</h5>
+            </a>
+            <p class="description">
+              michael24
+            </p>
+          </div>
+          <p class="description text-center">
+            "Lamborghini Mercy
+            <br> Your chick she so thirsty
+            <br> I'm in that two seat Lambo"
+          </p>
+        </div>
+        <hr>
+        <div class="button-container">
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+            <i class="fab fa-google-plus-g"></i>
+          </button>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+
